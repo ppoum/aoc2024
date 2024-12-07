@@ -1,6 +1,7 @@
 use std::{env, path::Path};
 
 mod day01;
+mod day02;
 
 fn main() {
     let arg = env::args().nth(1).expect("Usage: ./aoc2024 <day>");
@@ -21,8 +22,8 @@ fn main() {
     match arg.as_str() {
         "1a" => println!("{}", day01::part1(input)),
         "1b" => println!("{}", day01::part2(input)),
-        // "2a" => println!("{}", day02::part1(input)),
-        // "2b" => println!("{}", day02::part2(input)),
+        "2a" => println!("{}", day02::part1(input)),
+        "2b" => println!("{}", day02::part2(input)),
         // "3a" => println!("{}", day03::part1(input)),
         // "3b" => println!("{}", day03::part2(input)),
         // "4a" => println!("{}", day04::part1(input)),
